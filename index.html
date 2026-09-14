@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta name="theme-color" content="#014D26">
+
+  <meta
+    name="description"
+    content="Participe gratuitamente da Imersão Os 7 Lugares Emocionais no Relacionamento, nos dias 22, 24 e 25 de setembro de 2026, às 19h."
+  >
+
+  <meta property="og:type" content="website">
+
+  <meta
+    property="og:title"
+    content="Imersão Os 7 Lugares Emocionais no Relacionamento"
+  >
+
+  <meta
+    property="og:description"
+    content="Três encontros gratuitos e ao vivo para reconhecer de qual Lugar Emocional você está se relacionando."
+  >
+
+  <title>Imersão Os 7 Lugares Emocionais no Relacionamento</title>
+
+  <style>
+    :root {
+      --green: #014D26;
+      --green-deep: #083922;
+      --green-soft: #EDF5F0;
+      --gold: #B8872F;
+      --gold-light: #F5E8C8;
+      --white: #FFFFFF;
+      --off-white: #FAFBFA;
+      --ink: #25312B;
+      --muted: #65736B;
+      --rose: #B8786E;
+      --line: rgba(1, 77, 38, 0.13);
+      --shadow: 0 14px 38px rgba(4, 50, 29, 0.07);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding-bottom: 82px;
+      color: var(--ink);
+      background: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      margin-bottom: 1.35rem;
+      color: var(--green-deep);
+      font-size: clamp(2.7rem, 7vw, 5.7rem);
+    }
+
+    h2 {
+      margin-bottom: 1.4rem;
+      color: var(--green-deep);
+      font-size: clamp(2.1rem, 5vw, 4rem);
+    }
+
+    h3 {
+      font-size: clamp(1.35rem, 3vw, 1.9rem);
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .narrow {
+      width: min(780px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      position: relative;
+      overflow: hidden;
+      padding: 96px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.2rem;
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 30px;
+      height: 2px;
+      background: var(--gold);
+      content: "";
+    }
+
+    .highlight {
+      color: var(--gold);
+    }
+
+    .lead {
+      font-size: clamp(1.08rem, 2vw, 1.3rem);
+      line-height: 1.65;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 58px;
+      margin-top: 15px;
+      padding: 15px 27px;
+      border: 0;
+      border-radius: 999px;
+      color: var(--white);
+      background: var(--green);
+      box-shadow: 0 12px 28px rgba(1, 77, 38, 0.17);
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.035em;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--green-deep);
+      transform: translateY(-2px);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .btn-wide {
+      width: 100%;
+    }
+
+    .hero {
+      display: grid;
+      place-items: center;
+      min-height: 92vh;
+      background:
+        radial-gradient(
+          circle at 88% 15%,
+          rgba(217, 170, 69, 0.13),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 5% 90%,
+          rgba(1, 77, 38, 0.07),
+          transparent 28%
+        ),
+        var(--white);
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      pointer-events: none;
+      content: "";
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+    }
+
+    .hero-copy p {
+      max-width: 690px;
+      color: var(--muted);
+    }
+
+    .event-card {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .event-card strong {
+      display: block;
+      color: var(--green);
+      font-size: 1.08rem;
+    }
+
+    .event-row {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 15px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .event-row:last-of-type {
+      border-bottom: 0;
+    }
+
+    .event-date {
+      color: var(--gold);
+      font: 700 1.7rem/1 Georgia, serif;
+    }
+
+    .event-info {
+      color: var(--muted);
+    }
+
+    .event-info b {
+      color: var(--green-deep);
+    }
+
+    .micro {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    .pain {
+      background: var(--off-white);
+    }
+
+    .pain .narrow {
+      text-align: center;
+    }
+
+    .pain-lines {
+      display: grid;
+      gap: 13px;
+      max-width: 680px;
+      margin: 42px auto 0;
+      text-align: left;
+    }
+
+    .pain-line {
+      padding: 18px 20px;
+      border: 1px solid rgba(184, 120, 110, 0.18);
+      border-left: 3px solid var(--rose);
+      border-radius: 4px 14px 14px 4px;
+      background: var(--white);
+    }
+
+    .pain-ending {
+      max-width: 700px;
+      margin: 38px auto 0;
+      color: var(--green);
+      font: 700 clamp(1.35rem, 3vw, 2rem) / 1.35 Georgia, serif;
+    }
+
+    .places {
+      background: var(--white);
+    }
+
+    .places-head {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: end;
+      gap: 70px;
+      margin-bottom: 46px;
+    }
+
+    .places-head p {
+      color: var(--muted);
+    }
+
+    .places-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .place-card {
+      min-height: 225px;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--off-white);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .place-card:hover {
+      border-color: rgba(184, 135, 47, 0.45);
+      transform: translateY(-3px);
+    }
+
+    .place-card:nth-child(7) {
+      grid-column: span 2;
+    }
+
+    .place-number {
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.17em;
+    }
+
+    .place-card h3 {
+      margin: 14px 0 12px;
+      color: var(--green-deep);
+    }
+
+    .place-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .schedule {
+      background: var(--green-soft);
+    }
+
+    .schedule-head {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .schedule-list {
+      display: grid;
+      gap: 18px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 145px 1fr;
+      align-items: center;
+      gap: 28px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .day-date {
+      color: var(--green);
+      font: 700 2.5rem/1 Georgia, serif;
+    }
+
+    .day-date small {
+      display: block;
+      margin-top: 8px;
+      color: var(--rose);
+      font: 800 0.72rem/1.2 Inter, sans-serif;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .day h3 {
+      margin-bottom: 8px;
+      color: var(--green-deep);
+    }
+
+    .day p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .result-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 900px;
+      margin: 28px auto 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+
+    .result-item {
+      padding: 8px 18px;
+      border-right: 1px solid var(--line);
+    }
+
+    .result-item:last-child {
+      border-right: 0;
+    }
+
+    .result-item strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--green);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+    }
+
+    .result-item span {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .schedule-action {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .audience {
+      background: var(--white);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 2px;
+      padding: 12px 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--off-white);
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      align-items: start;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .check:last-child {
+      border-bottom: 0;
+    }
+
+    .check-mark {
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .mentors {
+      background: var(--green-soft);
+    }
+
+    .mentors-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .monogram {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 4 / 5;
+      border: 1px solid var(--line);
+      border-radius: 42% 42% 18px 18px;
+      color: var(--green);
+      background:
+        radial-gradient(
+          circle at 50% 30%,
+          rgba(184, 135, 47, 0.18),
+          transparent 28%
+        ),
+        var(--white);
+      font: 700 clamp(4rem, 10vw, 8rem) / 1 Georgia, serif;
+      letter-spacing: -0.12em;
+    }
+
+    .credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    .credential {
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 99px;
+      color: var(--green);
+      background: var(--white);
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .final {
+      color: var(--white);
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at 50% 5%,
+          rgba(217, 170, 69, 0.19),
+          transparent 30%
+        ),
+        linear-gradient(150deg, var(--green-deep), var(--green));
+    }
+
+    .final h2 {
+      color: var(--white);
+    }
+
+    .final .eyebrow {
+      color: var(--gold-light);
+    }
+
+    .final .narrow > p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .final .btn {
+      color: var(--green-deep);
+      background: var(--gold-light);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+    }
+
+    .final .btn:hover {
+      background: var(--white);
+    }
+
+    .free-card {
+      max-width: 640px;
+      margin: 38px auto 0;
+      padding: 34px;
+      border: 1px solid rgba(245, 232, 200, 0.34);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .free-card strong {
+      display: block;
+      color: var(--gold-light);
+      font: 700 clamp(2.5rem, 7vw, 4.8rem) / 1 Georgia, serif;
+    }
+
+    .free-card span {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .final .micro {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .sticky {
+      position: fixed;
+      z-index: 20;
+      bottom: 14px;
+      left: 50%;
+      width: min(680px, calc(100% - 24px));
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 28px rgba(4, 50, 29, 0.13);
+      backdrop-filter: blur(14px);
+      transform: translateX(-50%);
+    }
+
+    .sticky .btn {
+      width: 100%;
+      min-height: 48px;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    .site-footer {
+      padding: 32px 20px 100px;
+      color: var(--muted);
+      background: var(--white);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .section {
+        padding: 76px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 92px 0 105px;
+      }
+
+      .hero-grid,
+      .places-head,
+      .audience-grid,
+      .mentors-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+      }
+
+      .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .place-card:nth-child(7) {
+        grid-column: span 2;
+      }
+
+      .result-box {
+        grid-template-columns: 1fr;
+      }
+
+      .result-item {
+        padding: 8px 0 18px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .result-item:last-child {
+        padding-bottom: 8px;
+        border-bottom: 0;
+      }
+
+      .monogram {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container,
+      .narrow {
+        width: min(100% - 28px, 1140px);
+      }
+
+      .hero::before {
+        inset: 9px;
+        border-radius: 20px;
+      }
+
+      .event-card,
+      .free-card,
+      .result-box {
+        padding: 24px 20px;
+      }
+
+      .places-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .place-card,
+      .place-card:nth-child(7) {
+        grid-column: auto;
+        min-height: auto;
+      }
+
+      .day {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 24px 20px;
+      }
+
+      .day-date small {
+        display: inline;
+        margin-left: 8px;
+      }
+
+      .checklist {
+        padding: 8px 18px;
+      }
+
+      .btn {
+        width: 100%;
+        padding-inline: 16px;
+        font-size: 0.76rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sticky" aria-label="Inscrição">
+    <a class="btn registration-link" href="#">
+      Quero entrar no grupo gratuito
+    </a>
+  </div>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Imersão gratuita, online e ao vivo</span>
+
+          <h1>
+            Os 7 Lugares Emocionais no
+            <span class="highlight">Relacionamento</span>
+          </h1>
+
+          <p class="lead">
+            Descubra de qual Lugar Emocional você está se relacionando
+            e por que alguns conflitos continuam se repetindo, mesmo
+            quando você tenta fazer diferente.
+          </p>
+
+          <p>
+            Em três encontros gratuitos, você vai reconhecer os
+            movimentos que fazem você se anular, atacar, carregar,
+            controlar, fugir ou se afastar, mesmo quando ainda existe amor.
+          </p>
+
+          <a class="btn registration-link" href="#">
+            Quero entrar no grupo gratuito
+          </a>
+        </div>
+
+        <aside class="event-card" aria-label="Datas da imersão">
+          <strong>Setembro de 2026 • sempre às 19h</strong>
+
+          <div class="event-row">
+            <div class="event-date">22</div>
+
+            <div class="event-info">
+              <b>De qual Lugar você está se relacionando?</b><br>
+              Primeiro encontro ao vivo.
+            </div>
+          </div>
+
+          <div class="event-row">
+            <div class="event-date">24</div>
+
+            <div class="event-info">
+              <b>O ciclo invisível do relacionamento</b><br>
+              Segundo encontro ao vivo.
+            </div>
+          </div>
+
+          <div class="event-row">
+            <div class="event-date">25</div>
+
+            <div class="event-info">
+              <b>Como voltar ao seu Lugar</b><br>
+              Terceiro encontro ao vivo.
+            </div>
+          </div>
+
+          <a class="btn btn-wide registration-link" href="#">
+            Quero entrar no grupo gratuito
+          </a>
+
+          <p class="micro">
+            Online • ao vivo • horário de Brasília
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="pain section">
+      <div class="narrow">
+        <span class="eyebrow">O que ninguém vê</span>
+
+        <h2>
+          O problema não começa quando o relacionamento entra em crise.
+        </h2>
+
+        <p class="lead">
+          Começa nos pequenos movimentos que se repetem até você deixar
+          de reconhecer quem se tornou dentro da relação.
+        </p>
+
+        <div class="pain-lines">
+          <div class="pain-line">
+            Quando você sente medo de perder e aceita aquilo que machuca.
+          </div>
+
+          <div class="pain-line">
+            Quando tenta conversar, mas acaba atacando ou se defendendo.
+          </div>
+
+          <div class="pain-line">
+            Quando assume a responsabilidade de salvar, cobrar ou
+            conduzir o outro.
+          </div>
+
+          <div class="pain-line">
+            Quando se cala para evitar mais uma discussão.
+          </div>
+
+          <div class="pain-line">
+            Quando continua ao lado de alguém, mas já não consegue chegar
+            emocionalmente até essa pessoa.
+          </div>
+        </div>
+
+        <p class="pain-ending">
+          Por fora, a vida continua. Por dentro, você começa a se sentir
+          só dentro dos próprios relacionamentos.
+        </p>
+      </div>
+    </section>
+
+    <section class="places section">
+      <div class="container">
+        <div class="places-head">
+          <div>
+            <span class="eyebrow">A raiz do movimento</span>
+            <h2>Você não faz isso porque quer.</h2>
+          </div>
+
+          <p class="lead">
+            Você repete o Lugar Emocional que aprendeu a ocupar.
+            Enquanto não reconhece esse Lugar, tenta mudar o
+            relacionamento repetindo justamente o movimento que mantém
+            o problema.
+          </p>
+        </div>
+
+        <div class="places-grid">
+          <article class="place-card">
+            <span class="place-number">LUGAR 01</span>
+            <h3>Criança</h3>
+
+            <p>
+              O medo de perder faz você se anular, insistir ou aceitar
+              menos do que precisa.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 02</span>
+            <h3>Defesa e Reatividade</h3>
+
+            <p>
+              O medo de ser ferido faz qualquer conversa parecer uma ameaça.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 03</span>
+            <h3>Salvador</h3>
+
+            <p>
+              Você sente que, se parar de carregar o outro, tudo pode
+              desmoronar.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 04</span>
+            <h3>Pai ou Mãe do Parceiro</h3>
+
+            <p>
+              Você cobra, corrige e assume o que o outro também
+              precisaria sustentar.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 05</span>
+            <h3>Fuga</h3>
+
+            <p>
+              Você se cala, se afasta ou ocupa a mente para não
+              enfrentar o que sente.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 06</span>
+            <h3>Desequilíbrio de Troca</h3>
+
+            <p>
+              Um oferece cada vez mais e começa a se contentar com cada
+              vez menos.
+            </p>
+          </article>
+
+          <article class="place-card">
+            <span class="place-number">LUGAR 07</span>
+            <h3>Distância Silenciosa</h3>
+
+            <p>
+              Vocês continuam juntos, mas emocionalmente já não conseguem
+              chegar um até o outro.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule section">
+      <div class="container">
+        <div class="schedule-head">
+          <span class="eyebrow">Como vai funcionar</span>
+
+          <h2>
+            Três encontros para enxergar o que você ainda não conseguiu
+            nomear.
+          </h2>
+        </div>
+
+        <div class="schedule-list">
+          <article class="day">
+            <div class="day-date">
+              22/09
+              <small>às 19h</small>
+            </div>
+
+            <div>
+              <h3>
+                De qual Lugar Emocional você está se relacionando?
+              </h3>
+
+              <p>
+                Conheça os 7 Lugares e reconheça os movimentos que mais
+                aparecem em você.
+              </p>
+            </div>
+          </article>
+
+          <article class="day">
+            <div class="day-date">
+              24/09
+              <small>às 19h</small>
+            </div>
+
+            <div>
+              <h3>O ciclo invisível do relacionamento</h3>
+
+              <p>
+                Entenda como o seu Lugar encontra o Lugar do outro e
+                mantém conflitos, cobranças e afastamentos.
+              </p>
+            </div>
+          </article>
+
+          <article class="day">
+            <div class="day-date">
+              25/09
+              <small>às 19h</small>
+            </div>
+
+            <div>
+              <h3>Como voltar ao seu Lugar</h3>
+
+              <p>
+                Descubra o primeiro movimento para sair do padrão e
+                construir relações com mais consciência e equilíbrio.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="result-box">
+          <div class="result-item">
+            <strong>Reconhecer</strong>
+
+            <span>
+              Identifique os Lugares Emocionais que mais aparecem em você.
+            </span>
+          </div>
+
+          <div class="result-item">
+            <strong>Compreender</strong>
+
+            <span>
+              Perceba como esses Lugares influenciam suas conversas,
+              escolhas e vínculos.
+            </span>
+          </div>
+
+          <div class="result-item">
+            <strong>Movimentar</strong>
+
+            <span>
+              Enxergue qual pode ser o seu primeiro passo para não
+              continuar repetindo o mesmo ciclo.
+            </span>
+          </div>
+        </div>
+
+        <div class="schedule-action">
+          <a class="btn registration-link" href="#">
+            Quero entrar no grupo gratuito
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience section">
+      <div class="container audience-grid">
+        <div>
+          <span class="eyebrow">Para quem é</span>
+
+          <h2>
+            Relacionamento não é apenas sobre estar com alguém.
+          </h2>
+
+          <p class="lead">
+            É sobre como você se posiciona, se protege, entrega, recebe
+            e escolhe dentro de cada vínculo.
+          </p>
+        </div>
+
+        <div class="checklist">
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem está em uma relação, mas sente que algo se perdeu.
+            </span>
+          </div>
+
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem vive conflitos que sempre terminam da mesma forma.
+            </span>
+          </div>
+
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem está solteiro e percebe que repete padrões.
+            </span>
+          </div>
+
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem saiu de uma relação e não quer viver tudo novamente.
+            </span>
+          </div>
+
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem carrega, controla ou se anula por medo de perder.
+            </span>
+          </div>
+
+          <div class="check">
+            <span class="check-mark">✓</span>
+
+            <span>
+              Para quem quer se relacionar com mais clareza, limites e verdade.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mentors section">
+      <div class="container mentors-grid">
+        <div class="monogram" aria-label="Evandro e Alinne">
+          E·A
+        </div>
+
+        <div class="mentors-copy">
+          <span class="eyebrow">Quem conduz</span>
+
+          <h2>Evandro Favoretto e Alinne de Pasinatto</h2>
+
+          <p class="lead">
+            Evandro e Alinne acompanham pessoas e casais na compreensão
+            dos movimentos emocionais que influenciam suas escolhas,
+            seus limites e seus relacionamentos.
+          </p>
+
+          <p>
+            Depois de ouvirem milhares de histórias e presenciarem
+            transformações reais, organizaram os 7 Lugares Emocionais
+            para ajudar cada pessoa a reconhecer de onde está se
+            relacionando e qual movimento precisa fazer para voltar ao
+            seu Lugar.
+          </p>
+
+          <div class="credentials">
+            <span class="credential">Mentoria O Seu Lugar®</span>
+            <span class="credential">Relacionamentos</span>
+            <span class="credential">Desenvolvimento emocional</span>
+            <span class="credential">Neurociência e saúde mental</span>
+            <span class="credential">Constelação familiar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final section" id="inscricao">
+      <div class="narrow">
+        <span class="eyebrow">A porta está aberta</span>
+
+        <h2>
+          Você não precisa continuar repetindo os mesmos movimentos
+          para tentar fazer os seus relacionamentos darem certo.
+        </h2>
+
+        <p class="lead">
+          Durante três encontros, você poderá olhar para a sua história
+          com uma compreensão que pode mudar a forma como enxerga seus
+          conflitos, suas escolhas e a si mesmo.
+        </p>
+
+        <div class="free-card">
+          <strong>GRÁTIS</strong>
+
+          <span>
+            22, 24 e 25 de setembro • às 19h • online e ao vivo
+          </span>
+
+          <a class="btn btn-wide registration-link" href="#">
+            Quero entrar no grupo gratuito
+          </a>
+
+          <p class="micro">
+            Ao clicar, você será direcionado ao grupo da imersão no WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Mentoria O Seu Lugar® • Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const registrationUrl =
+      "https://chat.whatsapp.com/COLE_AQUI_O_CODIGO_DO_GRUPO";
+
+    document.querySelectorAll(".registration-link").forEach(function (link) {
+      link.setAttribute("href", registrationUrl);
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+  </script>
+</body>
+</html>
