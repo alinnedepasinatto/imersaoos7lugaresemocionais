@@ -2,12 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#014D26">
 
   <meta
@@ -16,12 +11,10 @@
   >
 
   <meta property="og:type" content="website">
-
   <meta
     property="og:title"
     content="Imersão Os 7 Lugares Emocionais no Relacionamento"
   >
-
   <meta
     property="og:description"
     content="Três encontros gratuitos e ao vivo para reconhecer de qual Lugar Emocional você está se relacionando."
@@ -40,9 +33,7 @@
       --off-white: #FAFBFA;
       --ink: #25312B;
       --muted: #65736B;
-      --rose: #B8786E;
       --line: rgba(1, 77, 38, 0.13);
-      --shadow: 0 14px 38px rgba(4, 50, 29, 0.07);
       --radius: 22px;
     }
 
@@ -56,7 +47,6 @@
 
     body {
       margin: 0;
-      padding-bottom: 82px;
       color: var(--ink);
       background: var(--white);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system,
@@ -78,12 +68,13 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.1;
       letter-spacing: -0.025em;
+      overflow-wrap: break-word;
     }
 
     h1 {
       margin-bottom: 1.35rem;
       color: var(--green-deep);
-      font-size: clamp(2.7rem, 7vw, 5.7rem);
+      font-size: clamp(2.5rem, 6.5vw, 5.7rem);
     }
 
     h2 {
@@ -115,28 +106,17 @@
     }
 
     .section {
-      position: relative;
-      overflow: hidden;
-      padding: 96px 0;
+      padding: 88px 0;
     }
 
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+      display: block;
       margin-bottom: 1.2rem;
       color: var(--green);
       font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.19em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      width: 30px;
-      height: 2px;
-      background: var(--gold);
-      content: "";
     }
 
     .highlight {
@@ -159,20 +139,19 @@
       border-radius: 999px;
       color: var(--white);
       background: var(--green);
-      box-shadow: 0 12px 28px rgba(1, 77, 38, 0.17);
+      box-shadow: 0 10px 24px rgba(1, 77, 38, 0.12);
       font-size: 0.88rem;
-      font-weight: 900;
+      font-weight: 800;
       letter-spacing: 0.035em;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      transition: transform 0.2s ease, background 0.2s ease;
+      transition: background 0.2s ease;
       cursor: pointer;
     }
 
     .btn:hover {
       background: var(--green-deep);
-      transform: translateY(-2px);
     }
 
     .btn:focus-visible {
@@ -185,85 +164,20 @@
     }
 
     .hero {
-      display: grid;
-      place-items: center;
-      min-height: 92vh;
-      background:
-        radial-gradient(
-          circle at 88% 15%,
-          rgba(217, 170, 69, 0.13),
-          transparent 27%
-        ),
-        radial-gradient(
-          circle at 5% 90%,
-          rgba(1, 77, 38, 0.07),
-          transparent 28%
-        ),
-        var(--white);
-    }
-
-    .hero::before {
-      position: absolute;
-      inset: 20px;
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      pointer-events: none;
-      content: "";
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: center;
-      gap: 70px;
+      padding: 100px 0 80px;
+      background: var(--white);
     }
 
     .hero-copy {
-      max-width: 760px;
+      max-width: 940px;
+      margin-inline: auto;
+      text-align: center;
     }
 
     .hero-copy p {
-      max-width: 690px;
+      max-width: 760px;
+      margin-inline: auto;
       color: var(--muted);
-    }
-
-    .event-card {
-      padding: 34px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--white);
-      box-shadow: var(--shadow);
-    }
-
-    .event-card strong {
-      display: block;
-      color: var(--green);
-      font-size: 1.08rem;
-    }
-
-    .event-row {
-      display: grid;
-      grid-template-columns: 54px 1fr;
-      gap: 15px;
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .event-row:last-of-type {
-      border-bottom: 0;
-    }
-
-    .event-date {
-      color: var(--gold);
-      font: 700 1.7rem/1 Georgia, serif;
-    }
-
-    .event-info {
-      color: var(--muted);
-    }
-
-    .event-info b {
-      color: var(--green-deep);
     }
 
     .micro {
@@ -281,19 +195,27 @@
       text-align: center;
     }
 
+    .pain-start {
+      margin: 34px 0 28px;
+      color: var(--green);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
     .pain-lines {
       display: grid;
       gap: 13px;
       max-width: 680px;
-      margin: 42px auto 0;
+      margin: 0 auto;
       text-align: left;
     }
 
     .pain-line {
       padding: 18px 20px;
-      border: 1px solid rgba(184, 120, 110, 0.18);
-      border-left: 3px solid var(--rose);
-      border-radius: 4px 14px 14px 4px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
       background: var(--white);
     }
 
@@ -312,7 +234,7 @@
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
       align-items: end;
-      gap: 70px;
+      gap: 60px;
       margin-bottom: 46px;
     }
 
@@ -322,7 +244,7 @@
 
     .places-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 16px;
     }
 
@@ -332,12 +254,6 @@
       border: 1px solid var(--line);
       border-radius: 18px;
       background: var(--off-white);
-      transition: transform 0.2s ease, border-color 0.2s ease;
-    }
-
-    .place-card:hover {
-      border-color: rgba(184, 135, 47, 0.45);
-      transform: translateY(-3px);
     }
 
     .place-card:nth-child(7) {
@@ -398,8 +314,8 @@
     .day-date small {
       display: block;
       margin-top: 8px;
-      color: var(--rose);
-      font: 800 0.72rem/1.2 Inter, sans-serif;
+      color: var(--muted);
+      font: 800 0.72rem/1.2 system-ui, sans-serif;
       letter-spacing: 0.14em;
       text-transform: uppercase;
     }
@@ -416,23 +332,14 @@
 
     .result-box {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
       max-width: 900px;
       margin: 28px auto 0;
       padding: 28px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--white);
-    }
-
-    .result-item {
-      padding: 8px 18px;
-      border-right: 1px solid var(--line);
-    }
-
-    .result-item:last-child {
-      border-right: 0;
     }
 
     .result-item strong {
@@ -461,13 +368,13 @@
       display: grid;
       grid-template-columns: 0.85fr 1.15fr;
       align-items: center;
-      gap: 70px;
+      gap: 60px;
     }
 
     .checklist {
       display: grid;
-      gap: 2px;
-      padding: 12px 26px;
+      gap: 16px;
+      padding: 26px;
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--off-white);
@@ -475,19 +382,13 @@
 
     .check {
       display: grid;
-      grid-template-columns: 28px 1fr;
+      grid-template-columns: 24px 1fr;
       align-items: start;
       gap: 12px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .check:last-child {
-      border-bottom: 0;
     }
 
     .check-mark {
-      color: var(--gold);
+      color: var(--green);
       font-weight: 900;
     }
 
@@ -499,54 +400,26 @@
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
       align-items: center;
-      gap: 70px;
+      gap: 60px;
     }
 
-    .monogram {
-      display: grid;
-      place-items: center;
-      aspect-ratio: 4 / 5;
-      border: 1px solid var(--line);
-      border-radius: 42% 42% 18px 18px;
-      color: var(--green);
-      background:
-        radial-gradient(
-          circle at 50% 30%,
-          rgba(184, 135, 47, 0.18),
-          transparent 28%
-        ),
-        var(--white);
-      font: 700 clamp(4rem, 10vw, 8rem) / 1 Georgia, serif;
-      letter-spacing: -0.12em;
+    .mentors-photo {
+      display: block;
+      width: 100%;
+      max-width: 440px;
+      height: auto;
+      margin-inline: auto;
+      border-radius: 22px;
     }
 
-    .credentials {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin-top: 24px;
-    }
-
-    .credential {
-      padding: 7px 12px;
-      border: 1px solid var(--line);
-      border-radius: 99px;
-      color: var(--green);
-      background: var(--white);
-      font-size: 0.78rem;
-      font-weight: 800;
+    .mentors-copy p:last-child {
+      margin-bottom: 0;
     }
 
     .final {
       color: var(--white);
       text-align: center;
-      background:
-        radial-gradient(
-          circle at 50% 5%,
-          rgba(217, 170, 69, 0.19),
-          transparent 30%
-        ),
-        linear-gradient(150deg, var(--green-deep), var(--green));
+      background: var(--green-deep);
     }
 
     .final h2 {
@@ -558,13 +431,13 @@
     }
 
     .final .narrow > p {
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.85);
     }
 
     .final .btn {
       color: var(--green-deep);
       background: var(--gold-light);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+      box-shadow: none;
     }
 
     .final .btn:hover {
@@ -582,30 +455,31 @@
 
     .free-card strong {
       display: block;
+      margin-bottom: 15px;
       color: var(--gold-light);
       font: 700 clamp(2.5rem, 7vw, 4.8rem) / 1 Georgia, serif;
     }
 
     .free-card span {
-      color: rgba(255, 255, 255, 0.78);
+      display: block;
+      color: rgba(255, 255, 255, 0.85);
     }
 
     .final .micro {
-      color: rgba(255, 255, 255, 0.68);
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .sticky {
       position: fixed;
       z-index: 20;
-      bottom: 14px;
+      bottom: max(12px, env(safe-area-inset-bottom));
       left: 50%;
       width: min(680px, calc(100% - 24px));
       padding: 8px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.97);
       box-shadow: 0 10px 28px rgba(4, 50, 29, 0.13);
-      backdrop-filter: blur(14px);
       transform: translateX(-50%);
     }
 
@@ -617,7 +491,7 @@
     }
 
     .site-footer {
-      padding: 32px 20px 100px;
+      padding: 32px 20px calc(120px + env(safe-area-inset-bottom));
       color: var(--muted);
       background: var(--white);
       font-size: 0.82rem;
@@ -626,49 +500,26 @@
 
     @media (max-width: 900px) {
       .section {
-        padding: 76px 0;
+        padding: 68px 0;
       }
 
       .hero {
-        min-height: auto;
-        padding: 92px 0 105px;
+        padding: 76px 0 60px;
       }
 
-      .hero-grid,
       .places-head,
       .audience-grid,
       .mentors-grid {
         grid-template-columns: 1fr;
-        gap: 42px;
+        gap: 36px;
       }
 
       .places-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .place-card:nth-child(7) {
-        grid-column: span 2;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .result-box {
         grid-template-columns: 1fr;
-      }
-
-      .result-item {
-        padding: 8px 0 18px;
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .result-item:last-child {
-        padding-bottom: 8px;
-        border-bottom: 0;
-      }
-
-      .monogram {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
       }
     }
 
@@ -679,15 +530,13 @@
 
       .container,
       .narrow {
-        width: min(100% - 28px, 1140px);
+        width: calc(100% - 32px);
       }
 
-      .hero::before {
-        inset: 9px;
-        border-radius: 20px;
+      h1 {
+        font-size: clamp(2.2rem, 9vw, 3.3rem);
       }
 
-      .event-card,
       .free-card,
       .result-box {
         padding: 24px 20px;
@@ -705,7 +554,7 @@
 
       .day {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 18px;
         padding: 24px 20px;
       }
 
@@ -715,13 +564,17 @@
       }
 
       .checklist {
-        padding: 8px 18px;
+        padding: 22px 18px;
       }
 
       .btn {
         width: 100%;
         padding-inline: 16px;
         font-size: 0.76rem;
+      }
+
+      .sticky .btn {
+        font-size: 0.72rem;
       }
     }
 
@@ -733,7 +586,7 @@
       *,
       *::before,
       *::after {
-        transition-duration: 0.01ms !important;
+        transition: none !important;
       }
     }
   </style>
@@ -741,16 +594,18 @@
 
 <body>
   <div class="sticky" aria-label="Inscrição">
-    <a class="btn registration-link" href="#">
+    <a class="btn registration-link" href="#inscricao">
       Quero entrar no grupo gratuito
     </a>
   </div>
 
   <main>
     <section class="hero section">
-      <div class="container hero-grid">
+      <div class="container">
         <div class="hero-copy">
-          <span class="eyebrow">Imersão gratuita, online e ao vivo</span>
+          <span class="eyebrow">
+            Imersão gratuita, online e ao vivo
+          </span>
 
           <h1>
             Os 7 Lugares Emocionais no
@@ -768,50 +623,7 @@
             movimentos que fazem você se anular, atacar, carregar,
             controlar, fugir ou se afastar, mesmo quando ainda existe amor.
           </p>
-
-          <a class="btn registration-link" href="#">
-            Quero entrar no grupo gratuito
-          </a>
         </div>
-
-        <aside class="event-card" aria-label="Datas da imersão">
-          <strong>Setembro de 2026 • sempre às 19h</strong>
-
-          <div class="event-row">
-            <div class="event-date">22</div>
-
-            <div class="event-info">
-              <b>De qual Lugar você está se relacionando?</b><br>
-              Primeiro encontro ao vivo.
-            </div>
-          </div>
-
-          <div class="event-row">
-            <div class="event-date">24</div>
-
-            <div class="event-info">
-              <b>O ciclo invisível do relacionamento</b><br>
-              Segundo encontro ao vivo.
-            </div>
-          </div>
-
-          <div class="event-row">
-            <div class="event-date">25</div>
-
-            <div class="event-info">
-              <b>Como voltar ao seu Lugar</b><br>
-              Terceiro encontro ao vivo.
-            </div>
-          </div>
-
-          <a class="btn btn-wide registration-link" href="#">
-            Quero entrar no grupo gratuito
-          </a>
-
-          <p class="micro">
-            Online • ao vivo • horário de Brasília
-          </p>
-        </aside>
       </div>
     </section>
 
@@ -823,10 +635,7 @@
           O problema não começa quando o relacionamento entra em crise.
         </h2>
 
-        <p class="lead">
-          Começa nos pequenos movimentos que se repetem até você deixar
-          de reconhecer quem se tornou dentro da relação.
-        </p>
+        <p class="pain-start">COMEÇA...</p>
 
         <div class="pain-lines">
           <div class="pain-line">
@@ -879,7 +688,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 01</span>
             <h3>Criança</h3>
-
             <p>
               O medo de perder faz você se anular, insistir ou aceitar
               menos do que precisa.
@@ -889,7 +697,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 02</span>
             <h3>Defesa e Reatividade</h3>
-
             <p>
               O medo de ser ferido faz qualquer conversa parecer uma ameaça.
             </p>
@@ -898,7 +705,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 03</span>
             <h3>Salvador</h3>
-
             <p>
               Você sente que, se parar de carregar o outro, tudo pode
               desmoronar.
@@ -908,7 +714,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 04</span>
             <h3>Pai ou Mãe do Parceiro</h3>
-
             <p>
               Você cobra, corrige e assume o que o outro também
               precisaria sustentar.
@@ -918,7 +723,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 05</span>
             <h3>Fuga</h3>
-
             <p>
               Você se cala, se afasta ou ocupa a mente para não
               enfrentar o que sente.
@@ -928,7 +732,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 06</span>
             <h3>Desequilíbrio de Troca</h3>
-
             <p>
               Um oferece cada vez mais e começa a se contentar com cada
               vez menos.
@@ -938,7 +741,6 @@
           <article class="place-card">
             <span class="place-number">LUGAR 07</span>
             <h3>Distância Silenciosa</h3>
-
             <p>
               Vocês continuam juntos, mas emocionalmente já não conseguem
               chegar um até o outro.
@@ -957,6 +759,10 @@
             Três encontros para enxergar o que você ainda não conseguiu
             nomear.
           </h2>
+
+          <p>
+            Setembro de 2026. Sempre às 19h, no horário de Brasília.
+          </p>
         </div>
 
         <div class="schedule-list">
@@ -970,7 +776,6 @@
               <h3>
                 De qual Lugar Emocional você está se relacionando?
               </h3>
-
               <p>
                 Conheça os 7 Lugares e reconheça os movimentos que mais
                 aparecem em você.
@@ -986,7 +791,6 @@
 
             <div>
               <h3>O ciclo invisível do relacionamento</h3>
-
               <p>
                 Entenda como o seu Lugar encontra o Lugar do outro e
                 mantém conflitos, cobranças e afastamentos.
@@ -1002,7 +806,6 @@
 
             <div>
               <h3>Como voltar ao seu Lugar</h3>
-
               <p>
                 Descubra o primeiro movimento para sair do padrão e
                 construir relações com mais consciência e equilíbrio.
@@ -1014,7 +817,6 @@
         <div class="result-box">
           <div class="result-item">
             <strong>Reconhecer</strong>
-
             <span>
               Identifique os Lugares Emocionais que mais aparecem em você.
             </span>
@@ -1022,7 +824,6 @@
 
           <div class="result-item">
             <strong>Compreender</strong>
-
             <span>
               Perceba como esses Lugares influenciam suas conversas,
               escolhas e vínculos.
@@ -1031,7 +832,6 @@
 
           <div class="result-item">
             <strong>Movimentar</strong>
-
             <span>
               Enxergue qual pode ser o seu primeiro passo para não
               continuar repetindo o mesmo ciclo.
@@ -1040,7 +840,7 @@
         </div>
 
         <div class="schedule-action">
-          <a class="btn registration-link" href="#">
+          <a class="btn registration-link" href="#inscricao">
             Quero entrar no grupo gratuito
           </a>
         </div>
@@ -1064,48 +864,42 @@
 
         <div class="checklist">
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem está em uma relação, mas sente que algo se perdeu.
             </span>
           </div>
 
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem vive conflitos que sempre terminam da mesma forma.
             </span>
           </div>
 
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem está solteiro e percebe que repete padrões.
             </span>
           </div>
 
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem saiu de uma relação e não quer viver tudo novamente.
             </span>
           </div>
 
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem carrega, controla ou se anula por medo de perder.
             </span>
           </div>
 
           <div class="check">
-            <span class="check-mark">✓</span>
-
+            <span class="check-mark" aria-hidden="true">✓</span>
             <span>
               Para quem quer se relacionar com mais clareza, limites e verdade.
             </span>
@@ -1116,9 +910,13 @@
 
     <section class="mentors section">
       <div class="container mentors-grid">
-        <div class="monogram" aria-label="Evandro e Alinne">
-          E·A
-        </div>
+        <img
+          class="mentors-photo"
+          src="./IMG_3066.jpg"
+          alt="Evandro Favoretto e Alinne de Pasinatto"
+          loading="lazy"
+          decoding="async"
+        >
 
         <div class="mentors-copy">
           <span class="eyebrow">Quem conduz</span>
@@ -1138,14 +936,6 @@
             relacionando e qual movimento precisa fazer para voltar ao
             seu Lugar.
           </p>
-
-          <div class="credentials">
-            <span class="credential">Mentoria O Seu Lugar®</span>
-            <span class="credential">Relacionamentos</span>
-            <span class="credential">Desenvolvimento emocional</span>
-            <span class="credential">Neurociência e saúde mental</span>
-            <span class="credential">Constelação familiar</span>
-          </div>
         </div>
       </div>
     </section>
@@ -1168,11 +958,10 @@
         <div class="free-card">
           <strong>GRÁTIS</strong>
 
-          <span>
-            22, 24 e 25 de setembro • às 19h • online e ao vivo
-          </span>
+          <span>22, 24 e 25 de setembro de 2026</span>
+          <span>Às 19h, no horário de Brasília. Online e ao vivo.</span>
 
-          <a class="btn btn-wide registration-link" href="#">
+          <a class="btn btn-wide registration-link" href="#inscricao">
             Quero entrar no grupo gratuito
           </a>
 
@@ -1189,6 +978,7 @@
   </footer>
 
   <script>
+    // Substitua pelo link completo e definitivo do grupo antes de publicar.
     const registrationUrl =
       "https://chat.whatsapp.com/COLE_AQUI_O_CODIGO_DO_GRUPO";
 
